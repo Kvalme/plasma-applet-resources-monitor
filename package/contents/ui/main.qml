@@ -116,8 +116,8 @@ Item {
             }
             else if (sourceName == averageClock) {
                 averageCpuClock = parseInt(data.value)
-                allUsageProportionChanged()
             }
+            allUsageProportionChanged()
         }
         interval: 1000 * plasmoid.configuration.updateInterval
     }
@@ -410,7 +410,7 @@ Item {
             }
         }
     }
-    
+
     MouseArea {
         id: mouseArea
         anchors.fill: parent
@@ -418,5 +418,5 @@ Item {
             kRun.openUrl(apps.data[apps.ksysguardSource].entryPath)
         }
     }
-    
+
 }
